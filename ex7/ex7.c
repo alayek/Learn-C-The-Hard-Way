@@ -23,5 +23,9 @@ int main(int argc, char const *argv[])
 	char null_byte = '\0';
 	int care_percentage = bugs * null_byte;
 	printf("Which means you should care %d%%\n", care_percentage);
+
+	// break with valgrind
+	printf("%s\n", null_byte);
+	printf("%c\n", null_byte);
 	return 0;
 }
